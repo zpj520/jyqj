@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晋银巧匠</title>
+    <style>
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 180px;
+        }
+        .navbar {
+            background-color: rgba(208, 255, 0, 0.296);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: rgb(248, 191, 191);
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+        .navbar a:hover {
+            background-color: rgba(200, 255, 0, 0.44);
+        }
+        .navbar img {
+            margin-right: 20px;
+        }
+        
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    
+    <div class="navbar">
+        <img src="icon.png" alt="网站图标" width="50" height="50">   
+        <a href="index.html">主页</a>
+        <a href="index1.html">智能机器人</a>
+        <a href="index2.html">产品</a>
+        <a href="index3.html">售后</a>
+    </div>
+
+    <div class="feedback-container">
+        <h1>提交反馈</h1>
+        <form action="index3.html" method="POST">
+            <div class="form-group">
+                <label for="order-number">订单号：</label>
+                <input type="text" id="order-number" name="order-number" required>
+            </div>
+
+            <!-- 手机号 -->
+            <div class="form-group">
+                <label for="phone">手机号：</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback-type">反馈类型：</label>
+                <select id="feedback-type" name="feedback-type" required>
+                    <option value="suggestion">建议</option>
+                    <option value="bug">退货</option>
+                    <option value="complaint">投诉</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">反馈内容：</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="提交反馈">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晋银巧匠</title>
+    <style>
+       body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 180px;
+        }
+        .navbar {
+            background-color: rgba(208, 255, 0, 0.296);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: rgb(248, 191, 191);
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+        .navbar a:hover {
+            background-color: rgba(200, 255, 0, 0.44);
+        }
+        .navbar img {
+            margin-right: 20px;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .product-container {
+            max-width: 1000px; /* 增加宽度以容纳图片 */
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex; /* 使用 Flexbox 布局 */
+            gap: 20px; /* 图片和内容之间的间距 */
+        }
+        .product-image {
+            flex: 1; /* 图片占据左侧空间 */
+            max-width: 300px; /* 限制图片的最大宽度 */
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-details {
+            flex: 2; /* 内容占据右侧空间 */
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        .product-price span {
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .service-options {
+            margin-bottom: 20px;
+        }
+        .service-options h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .service-options ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-options li {
+            margin-bottom: 5px;
+            color: #666;
+        }
+        .quantity-selector {
+            margin-bottom: 20px;
+        }
+        .quantity-selector label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .quantity-selector input {
+            width: 60px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .action-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .add-to-cart {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .buy-now {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .list{
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .list h2 {
+            text-align: center;
+        }
+        .food-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .food-item {
+            width: 19%;
+            text-align: center;
+        }
+        .food-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    
+    <div class="navbar">
+        <img src="icon.png" alt="网站图标" width="50" height="50">   
+        <a href="index.html">主页</a>
+        <a href="index1.html">智能机器人</a>
+        <a href="index2.html">产品</a>
+        <a href="index3.html">售后</a>
+    </div>
+
+    <div class="content">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="图片3.png" alt="产品图片">
+            </div>
+            <div class="product-details">
+                <div class="product-title">金银花软糖</div>
+                <div class="product-price">
+                    ¥2 / 100g
+                </div>
+                <div class="service-options">
+                    <h3>服务</h3>
+                    <ul>
+                        <li>物流：晚发必赔，商品假一赔三</li>
+                        <li>出货：最快支付后15天发货</li>
+                    </ul>
+                </div>
+                <div class="quantity-selector">
+                    <label for="quantity">数量：</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+                <div class="action-buttons">
+                    <button class="add-to-cart">加采购车</button>
+                    <button class="buy-now">立即购买</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <h2>相关产品</h2>
+            <div class="food-row">
+                <div class="food-item">
+                    <a href="index2-2.html">
+                        <img src="图片3.png" alt="金银花茶">
+                    </a>
+                </div>
+                <div class="food-item">
+                    <a href="index2-3.html">
+                        <img src="图片4.png" alt="金银花软糖">
+                    </a>
+                </div>
+                <div class="food-item">
+                    <a href="index2-4.html">
+                        <img src="图片5.png" alt="金银花洗面奶">
+                    </a>
+                </div>
+                <div class="food-item">
+                    <a href="index2-5.html">
+                        <img src="图片6.png" alt="金银花爽肤水">
+                    </a>
+                </div>
+                <div class="food-item">
+                    <a href="index2-6.html">
+                        <img src="图片7.png" alt="金银花爽肤水">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
